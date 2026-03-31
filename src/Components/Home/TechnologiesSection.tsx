@@ -5,7 +5,7 @@ const TechnologiesSection = () => {
    
 
     return (
-        <section className="w-full bg-[#0a0a0a] py-24 px-6 md:px-12 lg:px-20 relative overflow-hidden">
+        <section className="w-full bg-[#0a0a0a] py-24 px-4 sm:px-6 md:px-12 lg:px-20 relative overflow-hidden">
 
            
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/5 rounded-full blur-[140px] pointer-events-none" />

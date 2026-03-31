@@ -3,7 +3,7 @@ import { Phone } from 'lucide-react';
 
 const CTASection = () => {
     return (
-        <section className="w-full bg-[#0a0a0a] py-24 px-6 md:px-12 lg:px-20">
+        <section className="w-full bg-[#0a0a0a] py-24 px-4 sm:px-6 md:px-12 lg:px-20">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 lg:gap-20">
 
                 {/* Left Side: Image with signature curve */}
@@ -26,7 +26,7 @@ const CTASection = () => {
                     </span>
 
                     {/* Heading */}
-                    <h2 className="text-4xl md:text-5xl font-bold text-white leading-[1.1] tracking-tight">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-[1.1] tracking-tight">
                         Join Thousands of Business Owners & Companies Who Trust <span className="text-cyan-400">Our Services</span> Today!
                     </h2>
 

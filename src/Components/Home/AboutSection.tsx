@@ -5,7 +5,7 @@ const AboutSection = () => {
     const imageUrl = "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2070";
 
     return (
-        <section className="relative w-full h-auto lg:h-[700px] bg-[#0a0a0a] py-16 lg:py-0 px-6 md:px-12 lg:px-20 font-sans selection:bg-cyan-500/30 overflow-hidden flex items-center">
+        <section className="relative w-full h-auto lg:h-[700px] bg-[#0a0a0a] py-16 lg:py-0 px-4 sm:px-6 md:px-12 lg:px-20 font-sans selection:bg-cyan-500/30 overflow-hidden flex items-center">
 
             {/* Background Decorative Blur (Cyan Glow behind image) */}
             <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none" />
@@ -53,7 +53,7 @@ const AboutSection = () => {
                     <hr className="w-full border-t border-white/10" />
 
                     {/* Stats Grid */}
-                    <div className="grid grid-cols-2 gap-6 w-full pt-2">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full pt-2">
 
                         <div className="space-y-1">
                             <div className="flex items-baseline gap-1">

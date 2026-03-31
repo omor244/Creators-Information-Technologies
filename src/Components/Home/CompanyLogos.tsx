@@ -4,7 +4,7 @@ import { industries } from "../Data/data";
 const CompanyLogos = () => {
 
     return (
-        <section className="w-full bg-[#0a0a0a] py-24 px-6 md:px-12 lg:px-20 relative overflow-hidden">
+        <section className="w-full bg-[#0a0a0a] py-24 px-4 sm:px-6 md:px-12 lg:px-20 relative overflow-hidden">
 
             {/* Ambient Background Glow */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-blue-600/5 rounded-full blur-[120px] pointer-events-none" />

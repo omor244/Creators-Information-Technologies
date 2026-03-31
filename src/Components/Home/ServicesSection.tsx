@@ -6,7 +6,7 @@ const ServicesSection = () => {
     
 
     return (
-        <section className="w-full bg-[#0a0a0a] py-24 px-6 md:px-12 lg:px-20 relative overflow-hidden">
+        <section className="w-full bg-[#0a0a0a] py-24 px-4 sm:px-6 md:px-12 lg:px-20 relative overflow-hidden">
 
           
             <div className="absolute -top-24 -right-24 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[140px] pointer-events-none" />
@@ -34,7 +34,7 @@ const ServicesSection = () => {
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="group relative bg-[#fcfcfc] rounded-t-[1.5rem] rounded-bl-[1.5rem] rounded-br-[4rem] p-10 flex flex-col items-start min-h-[440px] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_30px_60px_-15px_rgba(59,130,246,0.3)] border border-white/10"
+                            className="group relative bg-[#fcfcfc] rounded-t-[1.5rem] rounded-bl-[1.5rem] rounded-br-[4rem] p-10 flex flex-col items-start min-h-[300px] md:min-h-[440px] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_30px_60px_-15px_rgba(59,130,246,0.3)] border border-white/10"
                         >
                             {/* Icon with Ring Container */}
                             <div className="w-16 h-16 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600 mb-10 transition-all duration-500 group-hover:bg-blue-600 group-hover:text-white group-hover:rotate-6">

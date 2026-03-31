@@ -12,7 +12,7 @@ const MainLayOut = () => {
             <header>
                 <Navber/>
             </header>
-            <main>
+            <main className="">
                 <Outlet/>
             </main>
             <div>

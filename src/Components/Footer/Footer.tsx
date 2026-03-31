@@ -15,7 +15,7 @@ const Footer = () => {
     const infoLinks = ['Design System', 'Blocks & Elements', '404 Error page', 'Maintenance Page', 'Search results', 'Terms & Conditions', 'Cookie Policy'];
 
     return (
-        <footer className="w-full bg-[#0a0a0a] pt-24 pb-12 px-6 md:px-12 lg:px-20 border-t border-white/5">
+        <footer className="w-full bg-[#0a0a0a] pt-24 pb-12 px-4 sm:px-6 md:px-12 lg:px-20 border-t border-white/5">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-20">
 
                 {/* Column 1: Brand & Contact */}

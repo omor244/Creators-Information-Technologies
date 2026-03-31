@@ -141,6 +141,21 @@ export const techStack = [
 ];
 
 
+export const clientLogos = [
+    { name: "State Bank of India", url: "https://i.ibb.co.com/4nrBv8hG/sbi-logo.png" },
+    { name: "Alpha Life Insurance", url: "https://i.ibb.co.com/211RKRK9/Alpha.jpg" },
+    { name: "Bangladesh Post", url: "https://i.ibb.co.com/XxkfCJCr/Bangladesh-Post-Office-logo-svg.png" },
+    { name: "BD Rugby Federation", url: "https://i.ibb.co.com/99krSGBC/Bangladesh-Rugby-Federation-logo.png" },
+    { name: "Bangladesh Australia Society of South Australia", url: "https://i.ibb.co.com/pv6YyfSB/bassa-logo-3.png" },
+    { name: "Bengal Meat", url: "https://i.ibb.co.com/5XBrvHY9/Bengalmeat.png" },
+    { name: "Bestway Group", url: "https://upload.wikimedia.org/wikipedia/commons/d/d6/Bestway_Group_Small_Logo.jpg" },
+    { name: "Global Agrovet Limited", url: "https://i.ibb.co.com/LdmZt1kZ/Global-Agrovet-Ltd.jpg" },
+    { name: "G News BD 24", url: "https://i.ibb.co.com/v6rQQRDX/gnewsbd24.png" },
+    { name: "Karim Group", url: "https://i.ibb.co.com/tTBKjZqk/Karim-Group.jpg" },
+    { name: "Opus BD", url: "https://i.ibb.co.com/VYHXXpXM/opus-bd.webp" },
+    { name: "Al Fatah Publications", url: "https://i.ibb.co.com/mFB1btBC/Al-Fatah.avif" },
+];
+
 
 
 

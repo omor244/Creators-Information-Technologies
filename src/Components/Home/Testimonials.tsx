@@ -19,7 +19,7 @@ const Testimonials = () => {
     
 
     return (
-        <section className="w-full bg-[#0a0a0a] py-24 px-6 md:px-12 lg:px-20 overflow-hidden border-t border-white/5">
+        <section className="w-full bg-[#0a0a0a] py-24 px-4 sm:px-6 md:px-12 lg:px-20 overflow-hidden border-t border-white/5">
             <div className="max-w-7xl mx-auto">
 
                 {/* Header with Navigation Controls */}
