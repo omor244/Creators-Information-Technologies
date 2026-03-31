@@ -4,10 +4,9 @@ import CompanyLogos from '@/Components/Home/CompanyLogos'
 import CTASection from '@/Components/Home/CTASection'  
 import HeroSection from '@/Components/Home/HeroSection'
 import ServicesSection from '@/Components/Home/ServicesSection'
+import TechnologiesSection from '@/Components/Home/TechnologiesSection'
 import Testimonials from '@/Components/Home/Testimonials'
 import WhyWorkWithUs from '@/Components/Home/WhyWorkWithUs'
-
-import { Card } from '@/Components/ui/card'
 
 
 const HomePage = () => {
@@ -15,11 +14,12 @@ const HomePage = () => {
     <div className="min-h-screen  text-white">
        <HeroSection/>
       <AboutSection />
-      <CompanyLogos />
       <ServicesSection />
+      <CompanyLogos />
       <WhyWorkWithUs/>
       <CTASection />
-      <Testimonials/>
+      <Testimonials />
+      <TechnologiesSection/>
       <BlogSection/>
 
      

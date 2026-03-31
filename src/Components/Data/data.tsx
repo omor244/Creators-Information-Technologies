@@ -1,3 +1,4 @@
+import { Banknote, Code, GraduationCap, Home, Hospital, Laptop, Layers, Palette, Settings, ShoppingCart, Truck } from "lucide-react";
 
 
 export const slideData = [
@@ -27,29 +28,40 @@ export const slideData = [
     }
 ];
 
-export const companies = [
-    { name: "Climb The Mountain", url: "https://i.ibb.co.com/Vc2ZR3xj/images.png" },
-    { name: "Ipsum", url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzQLofWOF8NSeFnJo3pE4QB85SyBZ26TUCbA&s" },
-    { name: "Ideabox", url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM3nZX28JrzTk0VxiULXknOspAJQEB-_66bg&s" }, // Alternative stable link
-    { name: "Golden", url: "https://t4.ftcdn.net/jpg/04/45/63/69/360_F_445636937_VnBUZ8NVUYD6kzZ3MxweB3e9R3Og95je.jpg" },
-    { name: "Lifeguard", url: "https://t4.ftcdn.net/jpg/05/86/89/41/360_F_586894106_94QK9by8ZICpdszBTJmdX6d1IOgHnntN.jpg" },
-    { name: "Bullseye", url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZowTqqL7xN6svnWegXAL_CewtFC1myOwgyg&s" },
+export const industries = [
+    { name: "Finance & Banking", icon: <Banknote className="w-10 h-10 text-[#2563eb]" /> },
+    { name: "Healthcare", icon: <Hospital className="w-10 h-10 text-[#0ea5e9]" /> },
+    { name: "E-Commerce & Retail", icon: <ShoppingCart className="w-10 h-10 text-[#38bdf8]" /> },
+    { name: "Manufacturing", icon: <Settings className="w-10 h-10 text-[#8b5cf6]" /> },
+    { name: "Logistics & Transportation", icon: <Truck className="w-10 h-10 text-[#2563eb]" /> },
+    { name: "Education & E-Learning", icon: <GraduationCap className="w-10 h-10 text-[#1d4ed8]" /> },
+    { name: "Real Estate", icon: <Home className="w-10 h-10 text-[#06b6d4]" /> },
+    { name: "SaaS & Startups", icon: <Layers className="w-10 h-10 text-[#22d3ee]" /> }
 ];
 
 export const services = [
     {
-        title: "Branding & Creative Services",
-        image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=800",
+        title: "Custom Software Development",
+        description: "We deliver fully customized software solutions aligned with your workflows and growth objectives.",
+        icon: <Code className="w-7 h-7" />,
         link: "#"
     },
     {
         title: "Web Design & Development",
-        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800",
+        description: "Creating responsive, high-performance websites that provide seamless user experiences across all devices.",
+        icon: <Laptop className="w-7 h-7" />,
         link: "#"
     },
     {
-        title: "Digital Marketing",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
+        title: "eCommerce Development",
+        description: "Building scalable online stores with secure payment integrations and optimized checkout flows.",
+        icon: <ShoppingCart className="w-7 h-7" />,
+        link: "#"
+    },
+    {
+        title: "Branding & Creative Services",
+        description: "Crafting unique visual identities and creative strategies that resonate with your target audience.",
+        icon: <Palette className="w-7 h-7" />,
         link: "#"
     }
 ];
@@ -76,5 +88,59 @@ export const testimonials = [
         content: "Lorem ipsum dolor amet at ornare ex, quis fringilla tortor! Nunc consectetur feugiat rutrum. Sed lorem ipsum sapien! Thank you!",
         image: "https://i.pravatar.cc/150?u=alexander"
     },
+    {
+        name: "Gregory Brown",
+        role: "Seven Shop - Owner",
+        title: "Exceptional service",
+        content: "Ipsum dolor sit amet – consectetur adipiscing elit molestieconsectetur luctus nec ullamcorper mattis nibh.",
+        image: "https://i.pravatar.cc/150?u=gregory"
+    },
+    {
+        name: "Alexander Bright",
+        role: "Seven Consulting - CEO",
+        title: "They took web design to the next level",
+        content: "Lorem ipsum dolor amet at ornare ex, quis fringilla tortor! Nunc consectetur feugiat rutrum. Sed lorem ipsum sapien! Thank you!",
+        image: "https://i.pravatar.cc/150?u=alexander"
+    },
+    {
+        name: "Gregory Brown",
+        role: "Seven Shop - Owner",
+        title: "Exceptional service",
+        content: "Ipsum dolor sit amet – consectetur adipiscing elit molestieconsectetur luctus nec ullamcorper mattis nibh.",
+        image: "https://i.pravatar.cc/150?u=gregory"
+    },
+    {
+        name: "Alexander Bright",
+        role: "Seven Consulting - CEO",
+        title: "They took web design to the next level",
+        content: "Lorem ipsum dolor amet at ornare ex, quis fringilla tortor! Nunc consectetur feugiat rutrum. Sed lorem ipsum sapien! Thank you!",
+        image: "https://i.pravatar.cc/150?u=alexander"
+    },
 
 ];
+
+export const techStack = [
+    { name: "Java", logo: "https://cdn.worldvectorlogo.com/logos/java-4.svg" },
+    { name: "Kotlin", logo: "https://cdn.worldvectorlogo.com/logos/kotlin-1.svg" },
+    { name: "Bootstrap", logo: "https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg" },
+    { name: "Django", logo: "https://cdn.worldvectorlogo.com/logos/django.svg" },
+    { name: "Flask", logo: "https://cdn.worldvectorlogo.com/logos/flask.svg" },
+    { name: "Ionic", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcHMiNjt5HH-HSrDQJ92qjilQoJAxUFBsqFg&s" },
+    { name: "Android Studio", logo: "https://cdn.worldvectorlogo.com/logos/android-studio-1.svg" },
+    { name: "C#", logo: "https://cdn.worldvectorlogo.com/logos/c--4.svg" },
+    { name: "JavaScript", logo: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" },
+    { name: "HTML5", logo: "https://cdn.worldvectorlogo.com/logos/html-1.svg" },
+    { name: "MongoDB", logo: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" },
+    { name: "Redis", logo: "https://cdn.worldvectorlogo.com/logos/redis.svg" },
+    { name: "TensorFlow", logo: "https://cdn.worldvectorlogo.com/logos/tensorflow-2.svg" },
+    { name: "LangChain", logo: "https://i.pinimg.com/736x/18/c3/ee/18c3eed2138409acf1fdfaa0ee4d64ad.jpg" },
+    { name: "React", logo: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
+    { name: "Next.js", logo: "https://cdn.worldvectorlogo.com/logos/next-js.svg" },
+    { name: "Express", logo: "https://cdn.worldvectorlogo.com/logos/express-109.svg" },
+    { name: "Tailwind CSS", logo: "https://cdn.worldvectorlogo.com/logos/tailwindcss.svg" },
+];
+
+
+
+
+

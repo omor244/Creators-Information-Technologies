@@ -5,7 +5,7 @@ import {
     SheetContent,
     SheetTrigger,
     SheetTitle,
-} from "@/components/ui/sheet";
+} from "@/Components/ui/sheet";
 
 const Navber = () => {
     const navItems = ['Home', 'Company', 'Services', 'Cases', 'Blog', 'Shop', 'Contact', 'More'];

@@ -1,60 +1,72 @@
-import React from 'react';
+
 import { ArrowRight } from 'lucide-react';
 import { services } from '../Data/data';
 
-
-
 const ServicesSection = () => {
-    return (
-        <section className="w-full bg-[#0a0a0a] py-24 px-6 md:px-12 lg:px-20">
-            <div className="max-w-7xl mx-auto">
+    
 
-                {/* Header Block */}
-                <div className="text-center mb-20 space-y-4">
-                    <span className="inline-flex items-center rounded-full bg-cyan-500/10 border border-cyan-500/20 px-5 py-2 text-xs font-bold uppercase tracking-widest text-cyan-400">
+    return (
+        <section className="w-full bg-[#0a0a0a] py-24 px-6 md:px-12 lg:px-20 relative overflow-hidden">
+
+          
+            <div className="absolute -top-24 -right-24 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[140px] pointer-events-none" />
+            <div className="absolute top-1/2 -left-24 w-[400px] h-[400px] bg-cyan-500/5 rounded-full blur-[120px] pointer-events-none" />
+
+            <div className="max-w-7xl mx-auto relative z-10">
+
+              
+                <div className="flex flex-col items-center text-center mb-20 space-y-5">
+                    <span className="bg-primary text-black font-bold text-[10px]  uppercase tracking-[0.25em] px-5 py-1.5 rounded-sm shadow-lg shadow-blue-600/20">
                         What We Do
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl mx-auto leading-tight">
-                        A Full Range of Modern Marketing & <br />
-                        <span className="text-cyan-400 text-opacity-80">Creative Services</span> for Your Business
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.1]">
+                        Our Most <span className="text-primary">In-Demand </span> & <br />
+                        Services
                     </h2>
-                    <p className="text-gray-400 max-w-2xl mx-auto text-lg font-light">
-                        We provide expert solutions tailored to your business needs, ensuring
-                        maximum growth and digital impact.
+                    <p className="text-gray-400 max-w-2xl mx-auto text-lg font-light leading-relaxed">
+                        With a promise to deliver the world's most advanced software development
+                        services and technologies.
                     </p>
                 </div>
 
-                {/* Services Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {/* 4-Column Services Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="group bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:border-cyan-500/50 transition-all duration-500 hover:-translate-y-2 shadow-2xl"
+                            className="group relative bg-[#fcfcfc] rounded-t-[1.5rem] rounded-bl-[1.5rem] rounded-br-[4rem] p-10 flex flex-col items-start min-h-[440px] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_30px_60px_-15px_rgba(59,130,246,0.3)] border border-white/10"
                         >
-                            {/* Image Container with Custom Corner */}
-                            <div className="relative aspect-[4/3] overflow-hidden">
-                                <img
-                                    src={service.image}
-                                    alt={service.title}
-                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80"
-                                />
-                                {/* The Signature Corner Cut-out */}
-                                <div className="absolute -bottom-1 -right-1 w-16 h-16 bg-[#0a0a0a] rounded-tl-[60px] border-t border-l border-white/10" />
+                            {/* Icon with Ring Container */}
+                            <div className="w-16 h-16 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600 mb-10 transition-all duration-500 group-hover:bg-blue-600 group-hover:text-white group-hover:rotate-6">
+                                {service.icon}
                             </div>
 
-                            {/* Content */}
-                            <div className="p-10 text-center space-y-6">
-                                <h3 className="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                            {/* Text Content */}
+                            <div className="space-y-4 flex-grow">
+                                <h3 className="text-2xl font-extrabold text-[#0f172a] leading-tight transition-colors duration-500">
                                     {service.title}
                                 </h3>
+                                <p className="text-slate-500 text-sm leading-relaxed font-medium">
+                                    {service.description}
+                                </p>
+                            </div>
+
+                            {/* Bottom Link Action */}
+                            <div className="mt-8 pt-6 border-t border-slate-100 w-full">
                                 <a
                                     href={service.link}
-                                    className="inline-flex items-center gap-2 text-cyan-400 font-bold uppercase tracking-widest text-xs hover:text-white transition-colors group/link"
+                                    className="inline-flex items-center gap-3 text-blue-600 font-bold uppercase tracking-widest text-[10px] group/link"
                                 >
-                                    View Details
-                                    <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
+                                    <span className="relative overflow-hidden">
+                                        View Details
+                                        <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-blue-600 transition-all duration-300 group-hover/link:w-full"></span>
+                                    </span>
+                                    <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1.5" />
                                 </a>
                             </div>
+
+                            {/* Dynamic Corner Gradient Overlay (Only visible on hover) */}
+                            <div className="absolute inset-0 rounded-t-[1.5rem] rounded-bl-[1.5rem] rounded-br-[4rem] bg-gradient-to-br from-transparent via-transparent to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                         </div>
                     ))}
                 </div>
