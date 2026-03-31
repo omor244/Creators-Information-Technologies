@@ -1,4 +1,4 @@
-import { Search, ShoppingBag, User, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import Logo from "../Logo/Logo";
 import {
     Sheet,
@@ -69,8 +69,8 @@ const Navbar = () => {
                     ))}
                 </nav>
 
-                {/* Right Side: Icons */}
-                <div className="flex items-center gap-3 md:gap-5 text-white">
+             
+                {/* <div className="flex items-center gap-3 md:gap-5 text-white">
                     <User className="w-5 h-5 cursor-pointer hover:text-cyan-400 transition hidden sm:block" />
                     <Search className="w-5 h-5 cursor-pointer hover:text-cyan-400 transition" />
                     <div className="relative cursor-pointer group">
@@ -79,7 +79,7 @@ const Navbar = () => {
                             0
                         </span>
                     </div>
-                </div>
+                </div> */}
             </nav>
         </section>
     );

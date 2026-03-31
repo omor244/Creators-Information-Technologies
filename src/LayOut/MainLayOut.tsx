@@ -9,7 +9,7 @@ import Footer from "@/Components/Footer/Footer";
 const MainLayOut = () => {
     return (
         <div className="bg-black">
-            <header>
+            <header className="sticky top-0 z-50">
                 <Navber/>
             </header>
             <main className="">
